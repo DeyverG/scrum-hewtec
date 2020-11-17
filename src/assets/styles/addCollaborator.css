@@ -1,0 +1,59 @@
+.containerAddColl{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.modalAddColl{
+    background-color: #86abc2;
+    width: 515px;
+    height: 376px;
+    border-radius: 40px;
+}
+
+.titleAddColl{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.divInputAddColl{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 65px 80px 10px 90px;
+}
+
+.pAddColl{
+    color: white;
+    margin-right: auto;
+    margin-left: 30px;
+    font-size: 110%;
+}
+
+.inputAddColl{
+    background-color: white;
+    width: 295px;
+    height: 44px;
+    border-radius: 14px;
+    border: none;
+    margin-left: 20px;
+}
+
+.divButtonAddColl{
+    background-color: #86abc2;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 120px 64px 120px;
+    display: flex;
+}
+
+.buttonAddColl{
+    background-color: #0899BA;
+    color: white;
+    width: 171px;
+    border-radius: 22px;
+    font-size: 113%;
+}
