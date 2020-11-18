@@ -1,0 +1,59 @@
+.tamaño {
+    height: 90vh;
+    overflow-y: scroll;
+    background: rgb(121, 121, 121, 0.2);
+}
+
+.contenedorProject {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 5;
+    justify-content: center;
+    width: 80vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh
+}
+
+.createProject {
+    top: 2.5rem !important;
+}
+
+.iconoFolder {
+    top: 2.5rem !important;
+    font-size: 1.8rem;
+}
+
+.scrollDiv::-webkit-scrollbar {
+    width: 10px;
+    /* Tamaño del scroll en vertical */
+}
+
+.scrollDiv::-webkit-scrollbar-thumb {
+    background: rgb(72, 149, 239, 0.5);
+    border-radius: 4px;
+}
+
+.scrollDiv::-webkit-scrollbar-thumb:hover {
+    background: rgb(72, 149, 239, 0.8);
+    ;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.scrollDiv::-webkit-scrollbar-thumb:active {
+    background-color: #4895EF;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+
+.scrollDiv::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+
+.scrollDiv::-webkit-scrollbar-track:hover, .scrollDiv::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
