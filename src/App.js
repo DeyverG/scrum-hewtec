@@ -11,7 +11,7 @@ import MyProjects from './pages/MyProjects';
 import CreateProject from './pages/CreateProject';
 import AddCollaborator from './pages/AddCollaborator';
 import EditProject from './pages/EditProject';
-
+ 
 function App() {
   return (
     <Router>
