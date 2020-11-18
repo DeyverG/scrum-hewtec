@@ -10,7 +10,7 @@ const MyProjects = () => {
         <>
             <Header />
 
-            <div className="tamaño scrollDiv">
+            <div className="tamañoProjects scrollDiv">
                 <div className="contenedorProject">
                     <div className="project">
                         <p className="fas fa-folder-plus projectName iconoFolder"></p>
