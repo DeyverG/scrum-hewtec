@@ -1,0 +1,63 @@
+.containerEditPro{
+    background: rgb(121, 121, 121, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.modalEditPro{
+    background-color: #86abc2;
+    width: 788px;
+    height: 493px;
+    border-radius: 40px;
+}
+
+.titleEditPro{
+    color: white;
+    margin-top: 3rem;
+    margin-left: 2.6rem;
+}
+
+.inputEditPro{
+    margin-left: 2.5rem;
+}
+
+.spanEditPro{
+    background-color: white;
+}
+
+.iconoEditPro{
+    margin-right: 4rem;
+}
+
+.textEditPro{
+    margin-left: 2.5rem;
+    width: 260px;
+    min-height: 170px;
+    max-height: 170px;
+}
+
+.divButtonEditPro{
+    background-color: #86abc2;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 120px 64px 120px;
+    display: flex;
+}
+
+.buttonEditPro{
+    background-color: #0899BA;
+    color: white;
+    width: 171px;
+    border-radius: 7px;
+    font-size: 113%;
+}
+
+.collEditPro{
+    background: rgb(72, 149, 239, 1);
+    height: 369px;
+    width: 340px;
+    border-radius: 14px;
+    color: white;
+}
