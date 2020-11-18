@@ -1,9 +1,11 @@
 import React from 'react';
 import '../assets/styles/editProject.css';
+import Header from '../components/Header';
 
 const EditProject = () => {
     return ( 
         <>
+        <Header />
         <form>
             <div className="containerEditPro" >
                 <div className="row modalEditPro" >

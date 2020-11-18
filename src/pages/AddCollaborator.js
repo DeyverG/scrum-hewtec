@@ -1,9 +1,11 @@
 import React from 'react';
 import '../assets/styles/addCollaborator.css';
+import Header from '../components/Header';
 
 const AddCollaborator = () => {
     return ( 
         <>
+        <Header />
         <form>
             <div className="containerAddColl" >
                 <div className="modalAddColl" >
