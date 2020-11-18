@@ -4,18 +4,20 @@ import '../assets/styles/addCollaborator.css';
 const AddCollaborator = () => {
     return ( 
         <>
-        <div className="containerAddColl" >
-            <div className="modalAddColl" >
-                <h2 className="titleAddColl" >Add Collaborator</h2>
-                <div className="divInputAddColl" >
-                    <p className="pAddColl" >Enter email</p>
-                    <input className="form-control inputAddColl" ></input>
-                </div>
-                <div className="divButtonAddColl" >
-                    <button className="btn buttonAddColl" ><b>Accept</b></button>
+        <form>
+            <div className="containerAddColl" >
+                <div className="modalAddColl" >
+                    <h2 className="titleAddColl" >Add Collaborator</h2>
+                    <div className="divInputAddColl" >
+                        <p className="pAddColl" >Enter email</p>
+                        <input className="form-control inputAddColl" ></input>
+                    </div>
+                    <div className="divButtonAddColl" >
+                        <button className="btn btn-primary buttonAddColl" ><b>Accept</b></button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
         </>
      );
 }

@@ -18,7 +18,7 @@ const EditProject = () => {
                         <h5 className="titleEditPro" >Description</h5>
                         <textarea className="form-control textEditPro" ></textarea>
                         <div className="divButtonEditPro" >
-                            <button className="btn buttonEditPro" >Save</button>
+                            <button className="btn btn-primary buttonEditPro" >Save</button>
                         </div>
                     </div>
                     <div className="form-group col-md-6" >

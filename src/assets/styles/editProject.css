@@ -21,6 +21,7 @@
 
 .inputEditPro{
     margin-left: 2.5rem;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
 }
 
 .spanEditPro{
@@ -29,6 +30,7 @@
 
 .iconoEditPro{
     margin-right: 4rem;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
 }
 
 .textEditPro{
@@ -36,6 +38,7 @@
     width: 260px;
     min-height: 170px;
     max-height: 170px;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
 }
 
 .divButtonEditPro{
@@ -52,6 +55,8 @@
     width: 171px;
     border-radius: 7px;
     font-size: 113%;
+    border-color: #0899BA;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
 }
 
 .collEditPro{
@@ -60,4 +65,5 @@
     width: 340px;
     border-radius: 14px;
     color: white;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
 }
