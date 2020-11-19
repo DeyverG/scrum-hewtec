@@ -5,8 +5,13 @@ import Sidebar from '../components/Sidebar';
 const EditUser = () => {
   return (
     <>
-      <Sidebar />
+    <div className="contenido2">
+      <div>
+      <Sidebar/>
+      </div>
+    
       <div className="editar_Usuario">
+        
         <form>
           <div className="form-row">
             <div className="form-group col-md-6">
@@ -63,6 +68,7 @@ const EditUser = () => {
             Save Changes
           </button>
         </form>
+      </div>
       </div>
     </>
   );
