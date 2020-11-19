@@ -1,21 +1,36 @@
+.contenido2{
+    background: rgb(121, 121, 121, 0.2);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    
+}
+
 .editar_Usuario{
     width: 450px;
     height: 400px;
-    margin: 10% auto;
     border-radius: 15px;
     background-color: #87abc3;
     color: #fff;
-    padding: 40px;
+    padding: 20px; 
+    margin-top: 10px;
+    margin-left: 20%;
+    
+
+    
 }
 form .mensaje{
     padding-left: 10%;
+}
+.form-control{
+    border-radius: 14px;
 }
 
 .botton_Edit{
     background-color: #1d4e89;
     margin-left: 20%;
     width: 250px;
-    border-radius: 20px;
+    border-radius: 22px;
     cursor: pointer;
     color: #fff;
 }
