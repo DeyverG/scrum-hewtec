@@ -1,10 +1,12 @@
 import React from 'react';
 import '../assets/styles/editUser.css';
 import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
 
 const EditUser = () => {
   return (
     <>
+    <Header />
     <div className="contenido2">
       <div>
       <Sidebar/>

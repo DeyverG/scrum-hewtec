@@ -27,7 +27,7 @@ const ProjectView = () => {
               <div className="cards_general">
              <div className="contenido_new2">
              <i class="fas fa-plus-circle icono_mas"></i>
-             <p className="contenido_new" >NeSection</p>
+             <p className="contenido_new" >New Section</p>
              </div>
            </div>
             </div>

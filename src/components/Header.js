@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                <i className="fas fa-bars iconoHeader"></i>
+                <i className="fas fa-bars iconoHeader" id="check" ></i>
                 <div className=" buscador">
                     <div className="iconobuscar form-control">
                         <i className="fas fa-search"></i>
