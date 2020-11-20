@@ -6,22 +6,25 @@
 
 .iconos_grid{
     font-size: 30px;
-    color: #0899BA;   
+    color: #0899BA;  
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.26));
 }
 
 .iconos_grid1{
     font-size: 30px;
     color: #0899BA;
     text-align: right; 
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.26));
 }
 .cards_project{
     position: absolute;
     display: flex;
     top: 20%; 
     width: 85%;
-    height: 390px; 
+    height: 480px; 
     margin-left: auto;
     margin-right: auto;
+
      
 }
 
