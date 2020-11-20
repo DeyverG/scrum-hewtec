@@ -2,7 +2,6 @@
     width: 12vw;
     height: 20vh;
     background: white;
-    margin: 1rem;
     display: inline-block;
     border-radius: 10px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
@@ -12,4 +11,7 @@
     top: 3.2rem;
     position: relative;
     margin: 0;
+}
+.marginLink{
+    margin: 1rem;
 }
