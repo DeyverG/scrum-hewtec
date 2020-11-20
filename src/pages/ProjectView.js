@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/projectView.css';
-import Cards from '../components/Cards';
+import Card from '../components/Card';
 import Header from '../components/Header';
 
 const ProjectView = () => {
@@ -23,12 +23,12 @@ const ProjectView = () => {
 
           <div className="row">
             <div className="col-11 cards_project">
-              <Cards />
-              <Cards />
-              <Cards />
+              <Card />
+              <Card />
+              <Card />
               <div className="cards_general">
                 <div className="contenido_new2">
-                  <i class="fas fa-plus-circle icono_mas"></i>
+                  <i className="fas fa-plus-circle icono_mas"></i>
                   <p className="contenido_new" >New Section</p>
                 </div>
               </div>

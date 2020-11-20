@@ -15,7 +15,7 @@ const EditProject = () => {
                         <div className="input-group mb-3" >
                             <input type="text" className="form-control inputEditPro" ></input>
                             <div className="input-group-append iconoEditPro" >
-                                <span class="input-group-text spanEditPro" ><i className="fas fa-edit"></i></span>
+                                <span className="input-group-text spanEditPro" ><i className="fas fa-edit"></i></span>
                             </div>
                         </div>
                         <h5 className="titleEditPro" >Description</h5>

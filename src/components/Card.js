@@ -1,9 +1,9 @@
 import React from 'react';
-import '../assets/styles/cards.css';
+import '../assets/styles/card.css';
 import Eq from '../assets/img/eq.jpg';
-import Tareas from '../components/Tareas';
+import Task from '../component/Task';
 
-const Cards = () => {
+const Card = () => {
   return (
     <>
       
@@ -19,7 +19,7 @@ const Cards = () => {
             <button type="submit" className="btn botton_Edit1">
             New Task
           </button>
-         <Tareas/>
+         <Task/>
            </div>
            
          
@@ -28,4 +28,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Card;
