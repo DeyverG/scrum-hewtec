@@ -1,0 +1,31 @@
+.fondoCollaborator{
+    display: flex;
+    /* align-items: flex-end; */
+    border-bottom: inset;
+    border-color: rgb(0, 0, 0, 0.5);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.iconUserColl{
+    color: black;
+    font-size: 22px;
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+
+.emailCollaborator{
+    margin-bottom: 0;
+}
+
+.iconTrashColl{
+    color: black;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding-top: 0.1rem;
+}
+
+.hrCollaborator{
+    color: black;
+}
