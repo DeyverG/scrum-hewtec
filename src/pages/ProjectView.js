@@ -8,21 +8,21 @@ const ProjectView = () => {
     <>
       <Header />
       <div className="contenido8">
-      <div class="container ">
+      <div className="container ">
         
-          <div class="row">
-    <div class="col-6 iconos_grid">
-    <i class="fas fa-user-plus color_icon"></i>
+          <div className="row">
+    <div className="col-6 iconos_grid">
+    <i className="fas fa-user-plus color_icon"></i>
     </div>
     
-    <div class="col-6 iconos_grid1">
-    <i class="fas fa-cogs color_icon"></i>
+    <div className="col-6 iconos_grid1">
+    <i className="fas fa-cogs color_icon"></i>
     
     </div>
   </div>
   
-          <div class="row">
-            <div class="col-11 cards_project">
+          <div className="row">
+            <div className="col-11 cards_project">
               <Cards/>
               <Cards/>
               <Cards/>

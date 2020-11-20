@@ -23,18 +23,18 @@ const Sidebar = () => {
 
           <div className="avatar1">
             <div className="opcion-text">
-              <a href="#" className="links_sidebar">
+              <a href="/" className="links_sidebar">
               <h6 className="nav-link links_sidebar" id="op-1">
                 <i className="fas fa-folder"></i>My Projects
               </h6>
               </a>
-              <a href="#" className="links_sidebar">
+              <a href="/" className="links_sidebar">
               <h6 className="nav-link links_sidebar" >
                 <i className="fas fa-users"></i>Colaborations
               </h6>
               </a>
 
-              <a href="#" className="links_sidebar">
+              <a href="/" className="links_sidebar">
               <h6 className="nav-link links_sidebar" >
                 <i className="fas fa-bell"></i>Notifications
               </h6>
