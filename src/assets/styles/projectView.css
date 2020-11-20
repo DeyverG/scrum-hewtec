@@ -1,0 +1,36 @@
+.contenido8{
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 90vh;
+   
+}
+
+.iconos_grid{
+    color: #0899BA;
+    
+}
+.iconos_grid1{
+    color: #0899BA;
+    text-align: right; 
+}
+.cards_project{
+    position: absolute;
+    display: flex;
+    top: 10%; 
+    width: 80%;
+    height: 450px; 
+    margin-left: 70px;   
+   
+}
+
+.icono_mas{
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    color: #0899BA;
+}
+.contenido_new2{
+    
+    margin-top: 60%;
+    height: 80px;
+}
