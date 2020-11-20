@@ -26,7 +26,7 @@ const EditProject = () => {
                     </div>
                     <div className="form-group col-md-6" >
                         <h5 className="titleEditPro" >Collaborators</h5>
-                        <div className="collEditPro" >
+                        <div className="collEditPro scrollDiv" >
                             <Collaborator />
                             <Collaborator />
                             <Collaborator />
