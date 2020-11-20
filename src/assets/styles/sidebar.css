@@ -48,11 +48,11 @@
     transition-property: all;
  }
  .links_sidebar:hover{
-     background: #8fbcf2 ;
-     text-decoration: none;
+    background: #8fbcf2 ;
+    text-decoration: none;
  }
  .links_sidebar i{
-     padding-right: 10px;
+    padding-right: 10px;
  }
 label #sidebar_btn{
     z-index: 1;

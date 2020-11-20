@@ -35,9 +35,6 @@ const ProjectView = () => {
             </div>
           </div>
         </div>
-
-
-
       </div>
     </>
   );
