@@ -27,3 +27,9 @@
     border-right: none;
     border-radius: 2rem 0 0 2rem;
 }
+#check:checked ~ .contenido_Sildebar{
+    color: #19B3D3;
+}
+#check:checked ~ .contenido_Sildebar{
+    left: -190px;
+}

@@ -6,6 +6,11 @@ import Off from "../assets/img/off.png";
 const Sidebar = () => {
   return (
     <>
+    <input type="checkbox" id="check"></input>
+    <label for="check">
+    <i className="fas fa-bars iconoHeader" id="sidebar_btn"  ></i>
+    </label>
+     
       <div className="contenido_Sildebar">
         <div className="sildebar1">
           <div className="admin1">

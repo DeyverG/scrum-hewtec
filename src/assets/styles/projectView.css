@@ -2,25 +2,27 @@
     background-color: #e4e4e4;
     width: 100%;
     height: 90vh;
-   
 }
 
 .iconos_grid{
-    color: #0899BA;
-    
+    font-size: 30px;
+    color: #0899BA;   
 }
+
 .iconos_grid1{
+    font-size: 30px;
     color: #0899BA;
     text-align: right; 
 }
 .cards_project{
     position: absolute;
     display: flex;
-    top: 10%; 
-    width: 80%;
-    height: 450px; 
-    margin-left: 70px;   
-   
+    top: 12%; 
+    width: 85%;
+    height: 390px; 
+    margin-left: auto;
+    margin-right: auto;
+     
 }
 
 .icono_mas{
@@ -29,8 +31,8 @@
     text-align: center;
     color: #0899BA;
 }
+
 .contenido_new2{
-    
     margin-top: 60%;
     height: 80px;
 }
