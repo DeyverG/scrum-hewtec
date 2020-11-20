@@ -1,10 +1,12 @@
 import React from 'react';
 import '../assets/styles/projectView.css';
 import Cards from '../components/Cards';
+import Header from '../components/Header';
 
 const ProjectView = () => {
   return (
     <>
+      <Header />
       <div className="contenido8">
       <div class="container ">
         
