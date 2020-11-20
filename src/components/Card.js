@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/card.css';
 import Eq from '../assets/img/eq.jpg';
-import Task from '../component/Task';
+import Task from '../components/Task';
 
 const Card = () => {
   return (
