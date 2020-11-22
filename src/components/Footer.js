@@ -9,9 +9,9 @@ const Footer = () => {
                <p className="rights">All rights reserved ADAC 2020</p>
             </div>
             <div className="iconosRedes contenedorIcon">
-               <i className="fab fa-facebook styleIcon"></i>
-               <i className="fab fa-instagram styleIcon"></i>
-               <i className="fab fa-linkedin styleIcon"></i>
+               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="space_link"><i className="fab fa-facebook styleIcon"></i></a>
+               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="space_link"><i className="fab fa-instagram styleIcon"></i></a>
+               <a href="https://co.linkedin.com/" target="_blank" rel="noopener noreferrer" className="space_link"><i className="fab fa-linkedin styleIcon"></i></a>
             </div>
          </div>
       </>

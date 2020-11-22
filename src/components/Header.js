@@ -1,16 +1,21 @@
 import React from 'react';
 import '../assets/styles/header.css'
-const Header = () => {
+const Header = ({ bandera }) => {
     return (
         <>
             <div className="header">
                 <i className="fas fa-bars iconoHeader" id="check" ></i>
-                <div className=" buscador">
-                    <div className="iconobuscar form-control">
-                        <i className="fas fa-search"></i>
+                {!bandera
+                    ?
+                    null
+                    :
+                    <div className=" buscador">
+                        <div className="iconobuscar form-control">
+                            <i className="fas fa-search"></i>
+                        </div>
+                        <input type="text" className="form-control inputBuscador" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
-                    <input type="text" className="form-control inputBuscador" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" />
-                </div>
+                }
             </div>
         </>
     );
