@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/styles/sidebar.css";
 import Avatar from "../assets/img/avatar.png";
 import Off from "../assets/img/off.png";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -23,22 +24,28 @@ const Sidebar = () => {
 
           <div className="avatar1">
             <div className="opcion-text">
-              <a href="/" className="links_sidebar">
+             <Link to="/MyProjects">
+             <a  className="links_sidebar">
               <h6 className="nav-link links_sidebar" id="op-1">
                 <i className="fas fa-folder"></i>My Projects
               </h6>
               </a>
-              <a href="/" className="links_sidebar">
+             </Link>
+              <Link to="/">
+              <a  className="links_sidebar">
               <h6 className="nav-link links_sidebar" >
                 <i className="fas fa-users"></i>Colaborations
               </h6>
               </a>
+              </Link>
 
-              <a href="/" className="links_sidebar">
+              <Link to="/">
+              <a  className="links_sidebar">
               <h6 className="nav-link links_sidebar" >
                 <i className="fas fa-bell"></i>Notifications
               </h6>
-              </a>           
+              </a> 
+                </Link>          
               
             </div>
           </div>
