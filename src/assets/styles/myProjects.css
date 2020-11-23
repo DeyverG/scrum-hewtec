@@ -17,10 +17,12 @@
 }
 
 .createProject {
+    color: black;
     top: 2.5rem !important;
 }
 
 .iconoFolder {
+    color: black;
     top: 2.5rem !important;
     font-size: 1.8rem;
 }

@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/styles/sidebar.css";
 import Avatar from "../assets/img/avatar.png";
 import Off from "../assets/img/off.png";
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ history }) => {
+  const [user, setUser] = useState({ name: '', img: Avatar })
+  const consulta = async () => {
+    const peticion = await JSON.parse(localStorage.getItem("userActive"));
+    if (!peticion) {
+      history.push("/")
+    }
+    setUser(peticion)
+  }
+  useEffect(() => {
+    consulta()
+
+  }, [])
   return (
     <>
-    <input type="checkbox" id="check"></input>
-    <label for="check">
-    <i className="fas fa-bars iconoHeader" id="sidebar_btn"  ></i>
-    </label>
-     
+      <input type="checkbox" id="check"></input>
+      <label for="check">
+        <i className="fas fa-bars iconoHeader" id="sidebar_btn"  ></i>
+      </label>
+
       <div className="contenido_Sildebar">
         <div className="sildebar1">
           <div className="admin1">
-            <img className="imgavatar" src={Avatar} alt="" />
-            <h5>Alejandra Jaimes</h5>
+            <img className="imgavatar" src={user.img} alt="" />
+            <h5>{user.name}</h5>
             <h2 className="subtitulo">
               <span></span>
             </h2>
@@ -24,29 +36,29 @@ const Sidebar = () => {
 
           <div className="avatar1">
             <div className="opcion-text">
-             <Link to="/MyProjects">
-             <a  className="links_sidebar">
-              <h6 className="nav-link links_sidebar" id="op-1">
-                <i className="fas fa-folder"></i>My Projects
+              <Link to="/MyProjects">
+                <a className="links_sidebar">
+                  <h6 className="nav-link links_sidebar" id="op-1">
+                    <i className="fas fa-folder"></i>My Projects
               </h6>
-              </a>
-             </Link>
+                </a>
+              </Link>
               <Link to="/">
-              <a  className="links_sidebar">
-              <h6 className="nav-link links_sidebar" >
-                <i className="fas fa-users"></i>Colaborations
+                <a className="links_sidebar">
+                  <h6 className="nav-link links_sidebar" >
+                    <i className="fas fa-users"></i>Colaborations
               </h6>
-              </a>
+                </a>
               </Link>
 
               <Link to="/">
-              <a  className="links_sidebar">
-              <h6 className="nav-link links_sidebar" >
-                <i className="fas fa-bell"></i>Notifications
+                <a className="links_sidebar">
+                  <h6 className="nav-link links_sidebar" >
+                    <i className="fas fa-bell"></i>Notifications
               </h6>
-              </a> 
-                </Link>          
-              
+                </a>
+              </Link>
+
             </div>
           </div>
 

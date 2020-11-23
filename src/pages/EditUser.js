@@ -3,13 +3,13 @@ import '../assets/styles/editUser.css';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 
-const EditUser = () => {
+const EditUser = ({ history }) => {
   return (
     <>
       <Header />
       <div className="contenido2">
         <div>
-          <Sidebar />
+          <Sidebar history={history}/>
         </div>
 
         <div className="editar_Usuario">
