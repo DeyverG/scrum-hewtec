@@ -40,3 +40,34 @@ hr{
     margin-left: 220px;
 
 }
+
+.inputEditModalNewTask{
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+    width: 324px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+}
+
+.textareaEditModalNewTask{
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+    width: 324px;
+    min-height: 125px;
+    max-height: 125px;
+    border-radius: 12px;
+    border: none;
+}
+
+.btnEditModalSaveNewTask{
+    border-radius: 22px;
+    background-color: #0899BA;
+    width: 182px;
+    height: 43px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+}
+
+.btnEditModalSaveNewTask:hover{
+    background-color: rgb(8, 153, 186, 60%);
+}
