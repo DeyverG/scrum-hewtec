@@ -3,7 +3,12 @@ import '../assets/styles/editUser.css';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 
+<<<<<<< HEAD
 const EditUser = ({ history }) => {
+=======
+
+const EditUser = () => {
+>>>>>>> devAlejandra
   return (
     <>
       <Header />
