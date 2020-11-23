@@ -33,3 +33,7 @@
 #check:checked ~ .contenido_Sildebar{
     left: -190px;
 }
+
+.esconder{
+    display: none;
+}
