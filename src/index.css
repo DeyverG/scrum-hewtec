@@ -12,3 +12,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.modal-content{
+  background-color: #4895EF;
+  border-radius: 14px;
+  color: white;
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-title{
+  margin-left: 10rem;
+}
+
+.modal-body{
+  align-self: center;
+}
+
+.modal-footer{
+  border-top: none;
+  align-self: center;
+}

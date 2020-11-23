@@ -2,7 +2,7 @@
     width: 90%;
     height: 35px;
     border: 1px solid ;
-    padding:10px 5px 10px 10px;
+    padding: 0px 5px 10px 10px;
     margin-left: 10px;
     border-radius: 5px;
     text-align: left;
@@ -11,22 +11,93 @@
     box-shadow: 0px 3px 8px rgb( 0, 0, 0, 0.4 );
    
 }
+
 .texto_img{
-    padding-top: 5px;
+    padding-top: 15px;
+}
+
+.icon_Task{
+    margin-left: auto;
+    height: 33px;
+}
+
+.divIcons{
+    width: max-content;
+    border-radius: 8px;
+}
+
+.btnEditTask{
+    width: 2.5rem;
+    cursor: pointer;
 }
 
 .imgeditar_eliminar{
     width: 15px;
     height: 15px;
-    margin-left: 35px;
     color: #FE6E00;
 }
+
+.inputEditModalTask{
+    width: 324px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+}
+
+.textareaEditModalTask{
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+    width: 324px;
+    min-height: 125px;
+    max-height: 125px;
+    border-radius: 12px;
+    border: none;
+}
+
+.btnEditModalSaveTask{
+    border-radius: 22px;
+    background-color: #0899BA;
+    width: 182px;
+    height: 43px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+}
+
+.btnEditModalSaveTask:hover{
+    background-color: rgb(8, 153, 186, 60%);
+}
+
+.btnDeleteTask{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
 .imgeditar_eliminar1{
     width: 15px;
     height: 15px;
-    margin-left: 20px;
     color: #FF0008;
 }
-.icon_Task{
-    margin-left: auto;
+
+.btnDeleteModalCancelTask{
+    border-radius: 22px;
+    background-color: #0899BA;
+    width: 182px;
+    height: 43px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
+}
+
+.btnDeleteModalCancelTask:hover{
+    background-color: rgb(8, 153, 186, 60%);
+}
+
+.btnDeleteModalConfirmTask{
+    border-radius: 22px;
+    background-color: rgb(251, 21, 21, 87%);
+    width: 182px;
+    height: 43px;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.26);
 }
