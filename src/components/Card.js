@@ -4,7 +4,7 @@ import Eq from '../assets/img/eq.jpg';
 import Task from '../components/Task';
 import Modal from 'react-bootstrap/Modal';
 
-const Card = () => {
+const Card = ({name}) => {
 
   // Modal New Task
   const [showNewTask, setShowNewTask] = useState(false);
@@ -15,7 +15,7 @@ const Card = () => {
     <>
       <div className="cards_general">
         <img className="imgaeq" src={Eq} alt="" />
-        <p>Task List</p>
+        <p>{name}</p>
         <hr/>
         <button type="submit" className="btn botton_Edit1" onClick={handleShowNewTask} >
           New Task
