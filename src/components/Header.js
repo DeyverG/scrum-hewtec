@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/styles/header.css'
+import Sidebar from '../components/Sidebar'
+import { Link, Redirect } from 'react-router-dom';
+
 const Header = ({ bandera }) => {
+
     return (
         <>
             <div className="header">
-                <i className="fas fa-bars iconoHeader" id="check" ></i>
+
+                <div class="dropdown">
+
+                    <i data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="fas fa-bars iconoHeader" ></i>
+
+                    <div class="dropdown-menu sildebar_menu" >
+                         <Sidebar />
+
+                    </div>
+                </div>
                 {!bandera
                     ?
                     null

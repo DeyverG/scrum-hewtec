@@ -14,10 +14,8 @@
     color: #fff;
     padding: 20px; 
     margin-top: 50px;
-    margin-left: 20%;
-    
-
-    
+    margin-left: auto; 
+    margin-right: auto;    
 }
 form .mensaje{
     padding-left: 10%;
