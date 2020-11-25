@@ -51,7 +51,7 @@ const Card = ({ id, name, sections, setSections, setBandera, idProject }) => {
   const handleSubmit = () => {
 
     if (newtask.name.trim() === '' || newtask.description.trim() === '') {
-      alert('completa esa monda, malparido');
+      alert('todos los datos son requeridos');
       return
     }
     setNewTask({

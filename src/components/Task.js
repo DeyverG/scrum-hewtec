@@ -35,7 +35,7 @@ const Task = ({ id, idSection, name, description, setBandera, setSections, secti
 
   const handleSave = () => {
     if (editTask.name.trim() === '' || editTask.description.trim() === '') {
-      alert('que llenes esa monda, care verga');
+      alert('todos los datos son requeridos');
       return
     }
     const taskDB = JSON.parse(localStorage.getItem('task'));
