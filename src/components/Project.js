@@ -16,7 +16,7 @@ const Project = ({ id, name, description }) => {
 
     return (
         <>
-            <Link to="/ProjectView" className="marginLink" name={name} onClick={projectON}>
+            <Link to="/ProjectView" className="marginLink filtro" name={name} onClick={projectON}>
                 <div className="project">
                     <p className="projectName">{name}</p>
                 </div>

@@ -11,6 +11,7 @@ import MyProjects from './pages/MyProjects';
 import CreateProject from './pages/CreateProject';
 import AddCollaborator from './pages/AddCollaborator';
 import EditProject from './pages/EditProject';
+import NotificactionView from './pages/NotificationView';
  
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/ProjectView" component={ProjectView} />
         <Route path="/AddCollaborator" component={AddCollaborator} />
         <Route path="/EditProject" component={EditProject} />
+        <Route path="/Notifications" component={NotificactionView} />
       </Switch>
     </Router>
   );

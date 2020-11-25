@@ -3,7 +3,7 @@ import '../assets/styles/projectView.css';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import Modal from 'react-bootstrap/Modal';
-
+import { nanoid } from 'nanoid'
 const ProjectView = () => {
 
   // Modal New Task
@@ -13,7 +13,11 @@ const ProjectView = () => {
 
   const [idProject, setIdProject] = useState({});
   const [sections, setSections] = useState([]);
-  const [newSection, setNewSection] = useState({name:''});
+  const [newSection, setNewSection] = useState({
+    id: nanoid(),
+    name: ''
+
+  });
   const [bandera, setBandera] = useState(true);
 
   const consultaBD = () => {
@@ -25,14 +29,21 @@ const ProjectView = () => {
   const consultaSection = id => {
     const peticion = JSON.parse(localStorage.getItem(`${id}`));
 
-    if(!peticion){
+    if (!peticion) {
       localStorage.setItem(`${id}`, '[]');
       return
     }
     setSections(peticion);
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+    const generarID = await nanoid()
+    setNewSection({
+      ...newSection,
+      id: generarID
+    })
+    console.log(newSection)
+
     const peticion = JSON.parse(localStorage.getItem(`${idProject.id}`));
     peticion.push(newSection)
     localStorage.setItem(`${idProject.id}`, JSON.stringify(peticion))
@@ -41,12 +52,15 @@ const ProjectView = () => {
   }
 
   const handleChange = e => {
-    setNewSection({[e.target.name]:e.target.value})
+    setNewSection({
+      ...newSection,
+      [e.target.name]: e.target.value
+    })
   }
 
   useEffect(() => {
-    
-    if(bandera){
+
+    if (bandera) {
       consultaBD();
       setBandera(false);
     }
@@ -70,19 +84,29 @@ const ProjectView = () => {
           </div>
 
           <div className="row">
-            <div className="col-11 cards_project">
-              {
-                sections.map(section => (
-                  <Card 
-                    name={section.name}
-                  />
-                ))
-              }
-              <div className="cards_general cursorSection" onClick={handleShowNewSection} >
-                <div className="contenido_new2">
-                  <i className="fas fa-plus-circle icono_mas"></i>
-                  <p className="contenido_new" >New Section</p>
+            <div className="cards_project scrollDiv">
+              <div className="alineandoCard">
+                {
+                  sections.map(section => (
+                    <Card
+                      key={section.id}
+                      id={section.id}
+                      name={section.name}
+                      sections={sections}
+                      setSections={setSections}
+                      setBandera={setBandera}
+                      idProject={idProject.id}
+                    />
+                  ))
+                }
+
+                <div className="cards_general cursorSection" onClick={handleShowNewSection} >
+                  <div className="contenido_new2">
+                    <i className="fas fa-plus-circle icono_mas"></i>
+                    <p>New Section</p>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
