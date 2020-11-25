@@ -24,7 +24,9 @@ code {
 }
 
 .modal-title{
-  margin-left: 10rem;
+  margin-left: 2rem;
+  width: 100%;
+  text-align-last: center;
 }
 
 .modal-body{

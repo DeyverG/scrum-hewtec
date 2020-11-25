@@ -25,7 +25,7 @@ const MyProjects = () => {
 
     return (
         <>
-            <Header bandera={true}/>
+            <Header bandera={true} projects={projects} setProjects={setProjects}/>
             <div className="tamañoProjects scrollDiv">
 
                 <div className="contenedorProject">

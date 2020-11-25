@@ -1,0 +1,47 @@
+.contenedor-Notify {
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    background: rgb(121, 121, 121, 0.2);
+}
+
+.div-notify {
+    width: 60vw;
+    height: 70vh;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    background: rgb(22, 103, 154, 0.45);
+    border-radius: 12px;
+}
+.text-notify{
+    margin-left: 5%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    background: white;
+}
+
+td, th {
+    border: 1px solid #a0a0a0;
+    text-align: center;
+    padding: 8px;
+}
+
+.btn-notify {
+    border-radius: 10px;
+    width: 8rem;
+    margin-left: 1rem;
+}
+.btn-accept{
+    background: #0899BA;
+    border-color: #0899BA;
+}
+.scroll-notify{
+    overflow-y: scroll;
+    height: 55vh;
+}
