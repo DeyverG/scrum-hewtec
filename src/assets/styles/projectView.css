@@ -17,6 +17,15 @@
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.26));
 }
 
+.color_icon, .color_icon1, .iconExclamation{
+    color: #0899BA;
+    cursor: pointer;
+}
+
+.iconExclamation{
+    margin-left: 1.5rem;
+}
+
 .cards_project {
     top: 20%;
     max-width: 96%;

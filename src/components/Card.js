@@ -66,7 +66,7 @@ const Card = ({ id, name, sections, setSections, setBandera, idProject }) => {
   }
 
   useEffect(() => {
-    consultaDBTask()
+    consultaDBTask();
   }, [])
 
   return (

@@ -9,7 +9,6 @@ const Collaborator = () => {
             <p className="emailCollaborator" >mail@gmail.com</p>
             <i className="fas fa-trash iconTrashColl"></i>
         </div>
-        {/* <hr className="hrCollaborator" /> */}
         </>
      );
 }

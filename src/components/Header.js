@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../assets/styles/header.css'
 import Sidebar from '../components/Sidebar'
-import { Link, Redirect } from 'react-router-dom';
 
 const Header = ({ bandera }) => {
 
@@ -14,11 +13,11 @@ const Header = ({ bandera }) => {
         <>
             <div className="header">
 
-                <div class="dropdown">
+                <div className="dropdown">
 
                     <i data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="fas fa-bars iconoHeader" ></i>
 
-                    <div class="dropdown-menu sildebar_menu" >
+                    <div className="dropdown-menu sildebar_menu" >
                          <Sidebar />
 
                     </div>

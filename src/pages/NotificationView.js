@@ -1,7 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from '../components/Header';
-import '../assets/styles/notificationView.css'
-const NotificactionView = () => {
+import '../assets/styles/notificationView.css';
+
+const NotificactionView = ({history}) => {
+
+    const consultaLogin = async () => {
+        const peticion = await JSON.parse(localStorage.getItem("userActive"));
+        if (!peticion) {
+            history.push("/")
+        }
+    }
+
+    useEffect(() => {
+        consultaLogin();
+    }, [])
+    
     return (
         <>
             <Header />

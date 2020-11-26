@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../assets/styles/addCollaborator.css';
 import Header from '../components/Header';
 
-const AddCollaborator = () => {
+const AddCollaborator = ({ history }) => {
+
+    const consultaLogin = async () => {
+        const peticion = await JSON.parse(localStorage.getItem("userActive"));
+        if (!peticion) {
+            history.push("/")
+        }
+    }
+
+    useEffect(() => {
+    consultaLogin();
+    }, [])
+
     return ( 
         <>
         <Header />

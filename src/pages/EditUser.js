@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../assets/styles/editUser.css';
-import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 
-const EditUser = () => {
+const EditUser = ({ history }) => {
+  
+  const consultaLogin = async () => {
+    const peticion = await JSON.parse(localStorage.getItem("userActive"));
+    if (!peticion) {
+      history.push("/")
+    }
+  }
+
+  useEffect(() => {
+    consultaLogin();
+  }, [])
+
   return (
     <>
       <Header />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/Header'
 import '../assets/styles/createProject.css';
 import { nanoid } from 'nanoid'
@@ -30,6 +30,19 @@ const CreateProject = ({ history }) => {
       localStorage.setItem('projects', JSON.stringify(projects));
       history.push('/MyProjects');
    }
+
+   const consultaLogin = async () => {
+      const peticion = await JSON.parse(localStorage.getItem("userActive"));
+      if (!peticion) {
+        history.push("/")
+      }
+   }
+
+   useEffect(() => {
+      consultaLogin();
+  
+    }, [])
+   
    return (
       <>
          <Header />

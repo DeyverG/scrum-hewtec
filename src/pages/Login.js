@@ -7,7 +7,6 @@ import GoogleLogin from 'react-google-login';
 const Login = ({history}) => {
 
    const responseGoogle = (response) => {
-      console.log(response);
       localStorage.setItem('userActive', JSON.stringify({
          name: `${response.profileObj.givenName}  ${response.profileObj.familyName}`,
          email: response.profileObj.email,
@@ -34,7 +33,7 @@ const Login = ({history}) => {
                      <br />
                      <div className="input-group input-group-lg">
                         <span className="input-group-addon" id="sizing-addon1"><i className="glyphicon glyphicon-lock"></i></span>
-                        <input type="password" className="input_login" placeholder="Password" required />
+                        <input type="current-password" className="input_login" placeholder="Password" required />
                      </div>
                      <br />
                      <div className="text_login">

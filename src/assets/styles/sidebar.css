@@ -1,5 +1,7 @@
-
-.sildebar1{
+.contenido_Sidebar{
+    background-color: white;
+}
+.sidebar1{
     
     text-align: center;
 }
@@ -45,4 +47,11 @@
      border-radius: 50px;
  }
 
+.colorUserName{
+    color: #000000;
+}
 
+.logoutGoogle{
+    border: none;
+    background-color: white;
+}

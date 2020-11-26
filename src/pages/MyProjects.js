@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Footer from '../components/Footer';
 import Header from '../components/Header';
 import '../assets/styles/myProjects.css';
 import Project from '../components/Project';
 import { Link } from 'react-router-dom';
 
 
-const MyProjects = () => {
+const MyProjects = ({history}) => {
 
     const [projects, setProjects] = useState([]);
 
@@ -19,8 +18,16 @@ const MyProjects = () => {
         }
     }
 
+    const consultaLogin = async () => {
+        const peticion = await JSON.parse(localStorage.getItem("userActive"));
+        if (!peticion) {
+            history.push("/")
+        }
+    }
+
     useEffect(() => {
-        consultarDB()
+        consultarDB();
+        consultaLogin();
     }, [])
 
     return (
